@@ -88,4 +88,3 @@ Brindar una solución digital para la comercialización de telas, facilitando la
 
 Proyecto académico SENA
 Ficha: (pon aquí tu ficha)
-
