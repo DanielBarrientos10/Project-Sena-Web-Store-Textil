@@ -1,14 +1,13 @@
 # 🧵 D&D TEXTIL - Tienda Digital
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00b4d8&height=220&section=header&text=DYD%20TEXTIL&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Tienda%20Digital%20SENA&descSize=20&descAlignY=62" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00b4d8&height=220&section=header&text=DANIEL%20BARRIENTOS&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Tienda%20Digital&descSize=20&descAlignY=62" width="100%" />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/SENA-39A900?style=for-the-badge&logo=sena&logoColor=white" />
 </p>
 
 ---
