@@ -41,28 +41,3 @@ src/
 ├── index.css
 └── main.jsx
 ```
-
----
-
-## ⚙️ Instalación rápida
-
-Sigue estos pasos para ejecutar el proyecto localmente:
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
-   cd TU_REPOSITORIO
-   ```
-
-2. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
-
-3. **Lanzar el entorno de desarrollo:**
-   ```bash
-   npm run dev
-   ```
-
-🔗 El proyecto estará disponible en: `http://localhost:5173` (o el puerto que indique Vite).
-
