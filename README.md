@@ -1,11 +1,13 @@
 # 🧵 D&D TEXTIL - Tienda Digital
 
-> **Proyecto SENA** | Solución digital para la comercialización de telas.
+<p align="center">
+  <b>Proyecto Formativo SENA</b><br>
+  <i>Solución integral para la comercialización y gestión de textiles</i>
+</p>
 
-| ⚛️ Framework | ⚡ Build Tool | 🎨 Styling | 🏛️ Institución |
-| :--- | :--- | :--- | :--- |
-| **React** | **Vite** | **Tailwind CSS** |
-
+<p align="center">
+  <kbd>React.js</kbd>+<kbd>Vite</kbd>+<kbd>Tailwind CSS</kbd>
+</p>
 
 ---
 
