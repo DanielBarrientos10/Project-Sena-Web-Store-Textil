@@ -1,14 +1,11 @@
-# D&D Textil - Tienda Digital
+# 🧵 D&D TEXTIL - Tienda Digital
 
-<p align="center">
-  <img src="./public/banner.png" width="100%" alt="D&D Textil Banner" />
-</p>
+> **Proyecto SENA** | Solución digital para la comercialización de telas.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-</p>
+| ⚛️ Framework | ⚡ Build Tool | 🎨 Styling | 🏛️ Institución |
+| :--- | :--- | :--- | :--- |
+| **React** | **Vite** | **Tailwind CSS** |
+
 
 ---
 
