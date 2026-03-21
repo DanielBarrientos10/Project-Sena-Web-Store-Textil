@@ -1,228 +1,91 @@
 # Project-Sena-Web-Store-Textil
 
-Plataforma web de venta de telas con backend Java (API REST) y frontend React (Vite).
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00b4d8&height=200&section=header&text=D%26D%20Textil&fontSize=70&animation=fadeIn" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
 
 ---
 
-## Requisitos Previos
+## 📌 Descripción
 
-- **Java JDK 17+** — [https://adoptium.net](https://adoptium.net)
-- **Node.js 18+** — [https://nodejs.org](https://nodejs.org)
-- **PostgreSQL 14+** — [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
+**D&D Textil** es una tienda digital desarrollada en el entorno SENA, enfocada en la venta de telas.
+El sistema permite a los usuarios explorar productos, agregarlos al carrito y realizar compras de forma sencilla.
 
-Verifica que están instalados:
-
-```bash
-java -version
-node -v
-npm -v
-psql --version
-```
+Además, incluye funcionalidades administrativas para la gestión de productos, usuarios y pedidos.
 
 ---
 
-## 1. Base de Datos
+## 👤 Autor
 
-### 1.1. Crear la base de datos
-
-Abre una terminal y ejecuta:
-
-```bash
-psql -U postgres
-```
-
-Dentro de psql:
-
-```sql
-CREATE DATABASE tienda_digital_textiles_db;
-\q
-```
-
-### 1.2. Restaurar el esquema y datos
-
-El archivo SQL se encuentra en la carpeta `BASE DE DATOS/` en la raíz del repositorio.
-
-```bash
-psql -U postgres -d tienda_digital_textiles_db -f "BASE DE DATOS/TIENDA DIGITAL TEXTIL.sql"
-```
-
-> **Nota:** Si te pide contraseña, ingresa la contraseña de tu usuario `postgres` de PostgreSQL.
-
-### 1.3. Verificar que se crearon las tablas
-
-```bash
-psql -U postgres -d tienda_digital_textiles_db -c "\dt"
-```
-
-Deberías ver las tablas: `users`, `products`, `categories`, `orders`, `order_items`, `product_images`, `coupons`, `coupon_categories`, `coupon_usage`, `support_tickets`, `bug_reports`, `cart_items`, `daily_sales`, `global_banner`, `inventory_batches`, `system_config`, entre otras.
+* **Daniel Barrientos**
+* CC: 1018224919
 
 ---
 
-## 2. Backend (Java API REST)
-
-### 2.1. Configurar variables de entorno
-
-El backend necesita la contraseña de PostgreSQL como variable de entorno. **No se almacena en el código fuente.**
-
-**PowerShell (Windows):**
-
-```powershell
-$env:DB_PASSWORD = "TU_CONTRASEÑA_DE_POSTGRES"
-```
-
-**CMD (Windows):**
-
-```cmd
-set DB_PASSWORD=TU_CONTRASEÑA_DE_POSTGRES
-```
-
-**Linux/Mac:**
+## ⚙️ Instalación rápida
 
 ```bash
-export DB_PASSWORD="TU_CONTRASEÑA_DE_POSTGRES"
-```
+# Clonar repositorio
+git clone TU_LINK_DE_GITHUB
 
-Variables opcionales (tienen valores por defecto):
+cd TU_REPOSITORIO
 
-| Variable      | Valor por defecto                                         |
-|---------------|-----------------------------------------------------------|
-| `DB_URL`      | `jdbc:postgresql://localhost:5432/tienda_digital_textiles_db` |
-| `DB_USER`     | `postgres`                                                |
-| `DB_PASSWORD` | *(vacío — debes configurarla)*                            |
-
-### 2.2. Compilar el backend
-
-Desde la carpeta del proyecto frontend (`tienda digital de telas/`):
-
-```bash
-javac -encoding UTF-8 -cp "backend-java/conexionPostgres/lib/*" -d "backend-java/conexionPostgres/bin" backend-java/conexionPostgres/src/App.java backend-java/conexionPostgres/src/conexion/*.java backend-java/conexionPostgres/src/api/*.java backend-java/conexionPostgres/src/dao/*.java backend-java/conexionPostgres/src/models/*.java
-```
-
-### 2.3. Ejecutar el backend
-
-```bash
-java -cp "backend-java/conexionPostgres/bin;backend-java/conexionPostgres/lib/*" App
-```
-
-> **En Linux/Mac**, usa `:` en lugar de `;` como separador del classpath:
-> ```bash
-> java -cp "backend-java/conexionPostgres/bin:backend-java/conexionPostgres/lib/*" App
-> ```
-
-Deberías ver:
-
-```
-Iniciando aplicación Backend...
- Conexión a PostgreSQL establecida con éxito.
-¡Conecta a la base de datos tienda_digital_textiles_db perfectamente!
- Servidor API escuchando en el puerto 8081
-```
-
-El backend queda escuchando en `http://localhost:8081`.
-
----
-
-## 3. Frontend (React + Vite)
-
-### 3.1. Instalar dependencias
-
-Desde la carpeta del proyecto frontend (`tienda digital de telas/`):
-
-```bash
+# Instalar dependencias
 npm install
-```
 
-### 3.2. Ejecutar en modo desarrollo
-
-```bash
+# Ejecutar proyecto
 npm run dev
 ```
 
-Deberías ver:
+Abrir en navegador:
 
 ```
-  VITE v5.x.x  ready in xxx ms
-
-  ➜  Local:   http://localhost:3001/
-```
-
-Abre `http://localhost:3001` en tu navegador.
-
-### 3.3. Build de producción (opcional)
-
-```bash
-npm run build
-npm run preview
+http://localhost:3000
 ```
 
 ---
 
-## Orden de Ejecución
-
-Siempre ejecuta en este orden:
-
-1. **PostgreSQL** — asegúrate de que el servicio esté corriendo
-2. **Backend Java** — configura `DB_PASSWORD` y ejecuta el servidor
-3. **Frontend React** — ejecuta `npm run dev`
-
----
-
-## Estructura del Proyecto
+## 🧱 Estructura del Proyecto
 
 ```
-tienda digital de telas/
-├── BASE DE DATOS/
-│   └── TIENDA DIGITAL TEXTIL.sql    ← Script SQL completo
-├── tienda digital de telas/          ← Proyecto principal
-│   ├── backend-java/
-│   │   └── conexionPostgres/
-│   │       ├── lib/                  ← JARs (PostgreSQL driver, Gson)
-│   │       ├── bin/                  ← Clases compiladas
-│   │       ├── uploads/              ← Imágenes subidas
-│   │       └── src/
-│   │           ├── App.java          ← Punto de entrada del backend
-│   │           ├── conexion/         ← Conexión a PostgreSQL
-│   │           ├── api/              ← Handlers HTTP (REST endpoints)
-│   │           ├── dao/              ← Acceso a datos (queries SQL)
-│   │           └── models/           ← Modelos de datos (POJOs)
-│   ├── src/
-│   │   ├── App.jsx                   ← Rutas principales
-│   │   ├── components/               ← Componentes React
-│   │   ├── context/                  ← Contextos (Auth, Cart, Metrics)
-│   │   ├── pages/                    ← Páginas de la aplicación
-│   │   └── data/                     ← Datos de navegación
-│   ├── package.json
-│   └── vite.config.js
-└── README.md
+src/
+├── components/
+├── pages/
+├── context/
+├── hooks/
+├── utils/
+├── data/
+├── App.jsx
+├── main.jsx
+└── index.css
 ```
 
 ---
 
-## Endpoints de la API
+## 🛒 Funcionalidades principales
 
-| Método | Ruta                                  | Descripción                    |
-|--------|---------------------------------------|--------------------------------|
-| POST   | `/api/login`                          | Iniciar sesión                 |
-| POST   | `/api/register`                       | Registrar usuario              |
-| GET    | `/api/products`                       | Listar productos activos       |
-| GET    | `/api/products?sellerId=X`            | Productos de un vendedor       |
-| GET    | `/api/products/pending`               | Productos pendientes de aprobación |
-| POST   | `/api/products`                       | Agregar producto               |
-| PUT    | `/api/products/{id}`                  | Actualizar producto            |
-| DELETE | `/api/products/{id}`                  | Eliminar producto (soft delete)|
-| PUT    | `/api/products/{id}/image`            | Subir imagen (Base64)          |
-| PUT    | `/api/products/{id}/moderate`         | Aprobar/rechazar producto      |
-| GET    | `/api/users`                          | Listar usuarios                |
-| GET    | `/api/orders`                         | Listar pedidos                 |
-| PUT    | `/api/orders/{id}/status`             | Actualizar estado de pedido    |
-| GET    | `/api/coupons`                        | Listar cupones                 |
-| POST   | `/api/coupons`                        | Crear cupón                    |
-| PUT    | `/api/coupons/{id}/deactivate`        | Desactivar cupón               |
-| GET    | `/api/config`                         | Obtener configuración          |
-| POST   | `/api/config`                         | Guardar configuración          |
-| GET    | `/api/support/tickets`                | Listar tickets de soporte      |
-| POST   | `/api/support/tickets`                | Crear ticket                   |
-| PUT    | `/api/support/tickets/{id}/status`    | Actualizar estado de ticket    |
-| GET    | `/api/support/bugs`                   | Listar reportes de fallos      |
-| POST   | `/api/support/bugs`                   | Crear reporte de fallo         |
-| PUT    | `/api/support/bugs/{id}/status`       | Actualizar estado de reporte   |
+* Catálogo de productos (telas)
+* Carrito de compras
+* Simulación de compra (checkout)
+* Diseño responsivo
+* Panel administrativo (en desarrollo)
+
+---
+
+## 🎯 Objetivo del proyecto
+
+Brindar una solución digital para la comercialización de telas, facilitando la compra en línea y mejorando la gestión de productos.
+
+---
+
+## 📬 Contacto
+
+Proyecto académico SENA
+Ficha: (pon aquí tu ficha)
+
