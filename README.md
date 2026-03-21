@@ -1,12 +1,13 @@
 # 🧵 D&D TEXTIL - Tienda Digital
 
 <p align="center">
-  <b>Proyecto Formativo SENA</b><br>
-  <i>Solución integral para la comercialización y gestión de textiles</i>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0077b6&height=220&section=header&text=D%26D%20TEXTIL&fontSize=75&animation=fadeIn&fontAlignY=38&desc=Tienda%20Digital%20de%20Telas&descSize=20&descAlignY=62" width="100%" />
 </p>
 
 <p align="center">
-  <kbd>React.js</kbd>+<kbd>Vite</kbd>+<kbd>Tailwind CSS</kbd>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>
 
 ---
