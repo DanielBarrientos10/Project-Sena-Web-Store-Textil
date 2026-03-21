@@ -1,7 +1,7 @@
 # 🧵 D&D TEXTIL - Tienda Digital
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00b4d8&height=220&section=header&text=D%20Y%20D%20TEXTIL&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Tienda%20Digital%20SENA&descSize=20&descAlignY=62" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00b4d8&height=220&section=header&text=DYD%20TEXTIL&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Tienda%20Digital%20SENA&descSize=20&descAlignY=62" width="100%" />
 </p>
 
 <p align="center">
