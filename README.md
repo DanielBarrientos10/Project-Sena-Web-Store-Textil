@@ -1,14 +1,14 @@
 # D&D Textil - Tienda Digital
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0077b6&height=250&section=header&text=D%26D%20Textil&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Tu%20aliado%20en%20el%20mundo%20de%20las%20telas&descSize=20&descAlignY=60" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0077b6&height=250&section=header&text=D%20and%20D%20Textil&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Tu%20aliado%20en%20el%20mundo%20de%20las%20telas&descSize=20&descAlignY=60" width="100%" />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/SENA-238223?style=for-the-badge&logo=SENA&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/SENA-FF6B00?style=for-the-badge" />
 </p>
 
 ---
