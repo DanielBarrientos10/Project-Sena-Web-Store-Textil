@@ -783,7 +783,3 @@ Recientemente hemos integrado mejoras significativas orientadas a facilitar el d
 - **Migración y Compatibilidad en Linux (Fedora):** Se ha configurado y testeado el proyecto para asegurar compatibilidad total en entornos Linux, incluyendo la instalación y configuración de Node.js, configuración nativa de PostgreSQL y la resolución de problemas de autenticación de conexión entre el backend de Java y la base de datos bajo este sistema operativo.
 - **Mejoras en la Conexión a Base de Datos:** Se han resuelto problemas de autenticación de PostgreSQL asegurando que la integración entre el backend en Vanilla Java y la base de datos sea robusta y segura tanto en entornos Windows como Linux.
 
----
-
-## Contacto
-Puedes comunicarte vía [GitHub](https://github.com/Jhonmoreno000) 
