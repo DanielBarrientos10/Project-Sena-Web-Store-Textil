@@ -1,0 +1,2 @@
+$env:PGPASSWORD = "91753"
+& "C:\Program Files\PostgreSQL\18\bin\pg_restore.exe" -h localhost -U postgres -d tienda_digital_textiles_db -v "C:\Users\RyZe_\Downloads\Project-Sena-Web-Store-Textil\BASE DE DATOS\TIENDA DIGITAL TEXTIL.sql"
